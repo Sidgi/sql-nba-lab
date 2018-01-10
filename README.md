@@ -120,7 +120,7 @@ Add the following to your `nba_queries.sql` file:
 
 ## Homework Submission
 
-* Homework is due at **11PM** on January 15th!
+* Homework is due at **11PM** on January 10th!
 * [Follow these instructions to submit your assignment](https://git.generalassemb.ly/wdi-jackalope/jackalope-students/blob/master/HOMEWORK.md)
 * [If you need help with your homework, check out the Student Resource Center!](https://git.generalassemb.ly/wdi-jackalope/jackalope-students/blob/master/SRC.md)
 
