@@ -1,23 +1,27 @@
 # SQL homework, NBA Style!!
 
-![Jordan Still The GOAT](https://media.giphy.com/media/3mISSzQUAVwmQ/giphy.gif)
+![](https://media.giphy.com/media/3o6gDYD4RxwY8uFot2/giphy.gif)
 
 ## Learning Objectives
+
 * Databases
 * PostgreSQL
 
 ## Resources
+
 * [PostgreSQL Docs](https://www.postgresql.org/docs/9.6/static/index.html)
 * [PostgreSQL Tutorial](https://www.tutorialspoint.com/postgresql/index.htm)
-* [Tims' Lecture](https://git.generalassemb.ly/wdi-nyc-8-28/sql_introduction)
+* [Drake's Lecture](https://git.generalassemb.ly/wdi-jackalope/Intro_Sql)
+* [W3Schools SQL](https://www.w3schools.com/sql/)
 
 ## Hints
+
 * In the **Terminal**, `psql` starts a connection to PostgreSQL
 * Within **psql**
-* `\l` lists all of your databases
-* `\c <your database>` connect to your database
-* `\dt` displays all tables within current database
-* `\q` quit psql
+* **`\l`** lists all of your databases
+* **`\c <your database>`** connect to your database
+* **`\dt`** displays all tables within current database
+* **`\q`** quit psql
 
 ## Setup
 
@@ -37,32 +41,40 @@ Let's start by **creating** an empty PSQL database called `nba_db` and then **se
 
 1. From the homework folder, open `nba_seed.sql` in SublimeText or your editor of choice
 2. We have completed the following for you:
-  * Drop a database called `nba_db` if it exists
-  * Create a database called `nba_db`
-  * Connect to `nba_db`
+
+* Drop a database called `nba_db` if it exists
+* Create a database called `nba_db`
+* Connect to `nba_db`
+
 3. Enter **PSQL** commands to complete the following objectives:
-  * Create a table called `players` with columns for
-    - `name`
-    - `age`
-    - `team`
-    - `games`
-    - `points`
-    
-    **HINT**
-    > What datatypes should each of these columns be?
-  * Insert the player:<br>
-    `Anderson Varejao, age: 29, team: CLE, games: 25, points: 271`
+
+* Create a table called `players` with columns for
+
+  * `name`
+  * `age`
+  * `team`
+  * `games`
+  * `points`
+
+  **HINT**
+
+  > What datatypes should each of these columns be?
+
+* Insert the player:<br>
+  `Anderson Varejao, age: 29, team: CLE, games: 25, points: 271`
+
 4. Save your `nba_seed.sql` file
 5. Run `nba_seed.sql` by entering the following command into the terminal:
-  ```
-  $ psql -f nba_seed.sql
-  ```
+
+```
+$ psql -f nba_seed.sql
+```
 
 ### Part 2 - Edit our seed file to import from a .csv
 
 In the `nba_seed.sql` file, look at the **COPY players** statement which is currently commented out - what do you think it does?
 
-Uncomment this COPY command and change the file path for `nba_season_2011_2012.csv` in order to get it to run on *your* machine. The command `pwd` in your terminal may help!
+**Uncomment** the COPY command and change the file path for `nba_season_2011_2012.csv` in order to get it to run on _your_ machine. The command `pwd` in your terminal may help!
 
 Afterwards comment out the single insert player command you created in Part 1, and run the seed file again:
 
@@ -75,6 +87,7 @@ $ psql -f nba_seed.sql
 **For Parts 3 and 4, work in the `nba_queries.sql` file. Run the file to test your answers by using `psql -f nba_queries.sql`**
 
 Some of the prompts may go a little further than what we saw in class, but should be very easy to Google and figure out. Some useful things to look up:
+
 * WHERE
 * ORDER BY
 * LIMIT
@@ -99,6 +112,16 @@ Add the following to your `nba_queries.sql` file:
 
 3. The team and the the number of players who score above 12 points per game on that team, ordered from the most number of players to the least number of players.
 
-## Submission
+## Test your code before submission!
 
-Homework is due by **11:00 Today!** Remember to work with each other and go to TAs when you need it, but follow the [guidelines](https://git.generalassemb.ly/wdi-nyc-8-28/Course-Information/blob/master/how-to-queue-with-TAs.md) for queuing. Follow the [rules for homework submission](https://git.generalassemb.ly/wdi-nyc-8-28/Course-Information/blob/master/homework.md) for creating your pull request to submit the homework.
+1. You can make your changes in main.js, console.log your variables, save your file then in Terminal run "node main.js".
+2. You can make an account here: https://repl.it/, and test your code using this online text editor.
+3. If you setup node as your buildpack in Sublime Text, you can do "CMD+B" to run your code in Sublime Text.
+
+## Homework Submission
+
+* Homework is due at **11PM** on January 15th!
+* [Follow these instructions to submit your assignment](https://git.generalassemb.ly/wdi-jackalope/jackalope-students/blob/master/HOMEWORK.md)
+* [If you need help with your homework, check out the Student Resource Center!](https://git.generalassemb.ly/wdi-jackalope/jackalope-students/blob/master/SRC.md)
+
+# [An important note on plagiarism](https://git.generalassemb.ly/wdi-jackalope/jackalope-students/blob/master/PLAGIARISM.md)
