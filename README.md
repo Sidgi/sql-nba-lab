@@ -68,8 +68,6 @@ You'll find two commands that will be very useful to this exercise:
   **HINT**
 
 
-```
-
 ### Part 2 - Basic SQL Queries
 
 **For Part 2, work in the `nba_queries.sql` file. Run the file to test your answers by using `psql -f nba_queries.sql`**
