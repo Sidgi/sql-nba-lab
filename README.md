@@ -29,9 +29,9 @@ We're going to work on our Postgresql skills by practicing basic SQL commands wi
 
 ### Part 0: Let's look at our files
 
-- We have a csv file that has NBA data. This data lists the name, age, team, games and points of different NBA players
+- We have a csv file, `nba_season_2011-2012` that has NBA data. This data lists the name, age, team, games and points of different NBA players
 
-- We have a file named `schema.sql`. This file is where we will define the structure of our `players` table that will be populated with the data from the csv file
+- We have a file named `schema.sql`. This is where we have defined the structure of our `players` table that will be populated with the data from the csv file
 
 - We also have a `package.json`. This file has a script called `db:setup`. This script will create a database named `nba_db` and will populate the `players` table based on our `schema.sql`. We also have a `db:seed` script that will populate our table with the NBA player csv data
 
@@ -39,11 +39,11 @@ We're going to work on our Postgresql skills by practicing basic SQL commands wi
 
 ### Part 1: Database Setup
 
-1. Create the schema for our `players` table using the column titles: name, age, team, games and points.
+1. Run `npm run db:setup` to create our database and our `players` table. 
 
-2. Run `npm run db:setup` to create your `players` table. 
+2. Run `npm run db:seed` to populate your `players` table with the csv data. 
 
-3. Run `npm run db:seed` to populate your `players` table with the csv data. Remember, you can check by going into postgres and connecting to the `nba_db` database and then displaying all tables
+3. Remember, you can check by going into postgres and connecting to the `nba_db` database and then displaying all tables
 
 ### Part 2 - Basic SQL Queries
 
