@@ -5,38 +5,56 @@
 
 -- [1] All columns for all players from the New York Knicks (NYK).
 
-
+SELECT * FROM players 
+WHERE team = 'NYK';
 
 -- [2] All columns for all players from the Indiana Packers (IND) who are under 26
 -- years old.
 
-
+SELECT * FROM players
+WHERE team = 'IND' AND age < 26;
 
 -- [3] All columns for all players, ordered from least points scored to most points
 -- scored.
 
+--SELECT * FROM players 
+--ORDER BY points ASC;
 
 -- [4] Player Name and Points per game (points/games)=ppg,
 -- for the players with the top 20 highest points-per-game
 -- per game for the players who have played AT LEAST 20 games
 -- result set: [name, ppg, points, games]
 
+SELECT name, points/games AS ppg, points, games
+FROM players
+WHERE games > 20
+ORDER BY ppg DESC 
+LIMIT 20 ;
 
 
 -- [5] The average age for all players. Name the result
 -- result set: [average_age]
 
-
+SELECT AVG(age) AS average_age
+FROM players;
 
 -- [6] The average age for all players on the Oklahoma City Thunder (OKC).
 -- result set: [average_age]
 
+SELECT team,AVG(age) AS average_age
+FROM players
+WHERE team = 'OKC'
+GROUP BY team;
 
 
 -- [7] The average age for all players who played more than 40 games.
 -- result set: [average_age]
 
-
+SELECT team,AVG(age) AS average_age
+FROM players
+WHERE games>40
+--GROUP BY team
+--ORDER BY average_age DESC;
 
 --------------------------------------------
 -- BONUS - Advanced SQL Queries
