@@ -56,3 +56,4 @@ Some useful things to look up:
 * LIMIT
 * AVG
 * SUM
+* initial commit
